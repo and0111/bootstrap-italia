@@ -1,4 +1,4 @@
-import Util from './util'
+import Util from 'bootstrap/js/src/util.js'
 
 /**
  * --------------------------------------------------------------------------
