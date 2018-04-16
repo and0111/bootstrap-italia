@@ -6,12 +6,11 @@ module.exports = {
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: false,
-      parallel: 4,
-      extraComments: true
+      parallel: 4
     }),
     new webpack.DefinePlugin(
       {'process.env.NODE_ENV': JSON.stringify('production')}
     ),
-    new WebpackShellPlugin({ onBuildExit: ['jekyll build --incremental'] })
+    new WebpackShellPlugin({ onBuildEnd: ['jekyll build --incremental'] })
   ]
 }
