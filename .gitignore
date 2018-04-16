@@ -42,5 +42,8 @@ Thumbs.db
 # Jekyll metadata and extra config file for `github` script
 .jekyll-metadata
 
+# Webpack 'build' folder
+build
+
 # Folders to ignore
 node_modules
